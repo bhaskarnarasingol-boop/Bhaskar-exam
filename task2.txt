@@ -1,0 +1,437 @@
+Task 2
+
+commit 566c7566b2048ce52434222dc936c566ed116df2
+Author: bhaskar <bhaskar@gmail.com>
+Date:   Tue Jun 23 10:53:38 2026 +0530
+
+    c1:added a1.txt
+23s1087@O-LT-006897 task1 % git log --oneline
+1970b7e (HEAD -> feature2) c4 added a1.txt
+610b6bf c3:added a3.txt
+f557d0b c2:added a2.txt
+566c756 c1:added a1.txt
+23s1087@O-LT-006897 task1 % git commit -m "added y1.txt" y1.txt
+On branch feature2
+nothing to commit, working tree clean
+23s1087@O-LT-006897 task1 % git commit -m "added y2.txt"        
+On branch feature2
+nothing to commit, working tree clean
+23s1087@O-LT-006897 task1 % git log --oneline
+1970b7e (HEAD -> feature2) c4 added a1.txt
+610b6bf c3:added a3.txt
+f557d0b c2:added a2.txt
+566c756 c1:added a1.txt
+23s1087@O-LT-006897 task1 % git add .
+23s1087@O-LT-006897 task1 % git status
+On branch feature2
+nothing to commit, working tree clean
+23s1087@O-LT-006897 task1 % git status
+On branch feature2
+nothing to commit, working tree clean
+23s1087@O-LT-006897 task1 % git status
+On branch feature2
+nothing to commit, working tree clean
+23s1087@O-LT-006897 task1 % history
+ 1183  git status
+ 1184  git commit -m "added y2.txt" y2.txt
+ 1185  git commit -m "added y2.txt" 
+ 1186  git push origin feature2
+ 1187  git reset --soft 610b6bf
+ 1188  git status
+ 1189  git commit -m "c4 added a1.txt"
+ 1190  git log
+ 1191  git log --oneline
+ 1192  git commit -m "added y1.txt" y1.txt
+ 1193  git commit -m "added y2.txt"
+ 1194  git log --oneline
+ 1195  git add .
+ 1196  git status
+ 1197  git status
+ 1198  git status
+23s1087@O-LT-006897 task1 % cd ..
+23s1087@O-LT-006897 Desktop % clear
+
+23s1087@O-LT-006897 Desktop % git clone https://github.com/palurisravs1910/surprise.git
+Cloning into 'surprise'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+23s1087@O-LT-006897 Desktop % cd surprise
+23s1087@O-LT-006897 surprise % git init
+Reinitialized existing Git repository in /Users/23s1087/Desktop/surprise/.git/
+23s1087@O-LT-006897 surprise % git config user.name "bhaskar"
+23s1087@O-LT-006897 surprise % git config user.email "bhsakar@gmail.com"
+23s1087@O-LT-006897 surprise % touch apple.txt micro.txt
+23s1087@O-LT-006897 surprise % ls
+apple.txt	micro.txt	README.md
+23s1087@O-LT-006897 surprise % git nano apple.txt
+git: 'nano' is not a git command. See 'git --help'.
+
+The most similar commands are
+	annotate
+	daemon
+23s1087@O-LT-006897 surprise % nano apple.txt 
+23s1087@O-LT-006897 surprise % cat apple.txt
+23s1087@O-LT-006897 surprise % cat apple.txt
+23s1087@O-LT-006897 surprise % git cat apple.txt
+git: 'cat' is not a git command. See 'git --help'.
+
+The most similar commands are
+	clean
+	mktag
+	stage
+	stash
+	tag
+	var
+23s1087@O-LT-006897 surprise % cat apple.txt    
+23s1087@O-LT-006897 surprise % nano apple.txt
+23s1087@O-LT-006897 surprise % cat apple.txt
+git init 
+git config user.name "bhaksar"
+git config user.email "bhaskar@gmail.com"
+touch <file name>
+ls
+git add <file name>
+git status
+git commit -m "added<file name>" <file name>
+git log
+git log --oneline
+
+23s1087@O-LT-006897 surprise % nano micro.txt
+23s1087@O-LT-006897 surprise % cat micro.txt
+list the branch>>>>>git branch
+switch to bbranch>>>>>git switch branch name
+creat branch and switch>>>git checkout -b <branch name>
+To push git hub >>>>git push origin branch name
+
+To pull>>>>git pull origin branch name
+
+To list all branch present in remotely or git hub>>>>>git branch -r
+
+To list all branch present in remotely or git hub and locally >>>>>git branch -a
+
+To rename the branch >>>>>git branch -m old branch name  new branch name
+
+to delete the brenches localy>>>>>git branch -d branch name
+                               or>>git branch -D branch name
+
+
+to delete the branches remotly:->>>>git push origin -d branch name
+
+rename>>>>git branch -m old branch name newbranch name
+23s1087@O-LT-006897 surprise % git branch
+* main
+23s1087@O-LT-006897 surprise % git checkout -b surprise
+Switched to a new branch 'surprise'
+23s1087@O-LT-006897 surprise % touch unit.txt
+23s1087@O-LT-006897 surprise % nano unit.txt
+23s1087@O-LT-006897 surprise % cat unit.txt
+mkdir <folder name>
+cd <folder name>
+touch <file name>
+23s1087@O-LT-006897 surprise % git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+23s1087@O-LT-006897 surprise % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	apple.txt
+	"apple.txt\023y"
+	micro.txt
+	unit.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+23s1087@O-LT-006897 surprise % git add .
+23s1087@O-LT-006897 surprise % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   apple.txt
+	new file:   "apple.txt\023y"
+	new file:   micro.txt
+	new file:   unit.txt
+
+23s1087@O-LT-006897 surprise % git commit -m "added apple.txt" apple.txt
+[main 380e0ce] added apple.txt
+ 1 file changed, 11 insertions(+)
+ create mode 100644 apple.txt
+23s1087@O-LT-006897 surprise % git commit -m "added micro.txt" micro.txt
+[main 6df428d] added micro.txt
+ 1 file changed, 20 insertions(+)
+ create mode 100644 micro.txt
+23s1087@O-LT-006897 surprise % git log --oneline
+6df428d (HEAD -> main) added micro.txt
+380e0ce added apple.txt
+474bda4 (origin/main, origin/HEAD, surprise) Initial commit
+23s1087@O-LT-006897 surprise % git switch surprise
+A	"apple.txt\023y"
+A	unit.txt
+Switched to branch 'surprise'
+23s1087@O-LT-006897 surprise % ls
+apple.txt?y	README.md	unit.txt
+23s1087@O-LT-006897 surprise % git add .
+23s1087@O-LT-006897 surprise % git commit -m "added unit .txt" unit.txt
+[surprise 9c64107] added unit .txt
+ 1 file changed, 3 insertions(+)
+ create mode 100644 unit.txt
+23s1087@O-LT-006897 surprise % git log --oneline
+9c64107 (HEAD -> surprise) added unit .txt
+474bda4 (origin/main, origin/HEAD) Initial commit
+23s1087@O-LT-006897 surprise % git switch main                         
+A	"apple.txt\023y"
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+23s1087@O-LT-006897 surprise % git merge
+Already up to date.
+23s1087@O-LT-006897 surprise % git switch surprise
+A	"apple.txt\023y"
+Switched to branch 'surprise'
+23s1087@O-LT-006897 surprise % git log --oneline  
+9c64107 (HEAD -> surprise) added unit .txt
+474bda4 (origin/main, origin/HEAD) Initial commit
+23s1087@O-LT-006897 surprise % git switch main    
+A	"apple.txt\023y"
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+23s1087@O-LT-006897 surprise % git log --oneline
+6df428d (HEAD -> main) added micro.txt
+380e0ce added apple.txt
+474bda4 (origin/main, origin/HEAD) Initial commit
+23s1087@O-LT-006897 surprise % git branch
+* main
+  surprise
+23s1087@O-LT-006897 surprise % touch amazon.txt
+23s1087@O-LT-006897 surprise % nano amazon.txt
+23s1087@O-LT-006897 surprise % git merge surprise
+error: Your local changes to the following files would be overwritten by merge:
+  apple.txt?y
+<stdin>:7: trailing whitespace.
+git init 
+<stdin>:17: new blank line at EOF.
++
+warning: 2 lines add whitespace errors.
+Merge with strategy ort failed.
+23s1087@O-LT-006897 surprise % git add .
+23s1087@O-LT-006897 surprise % git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   amazon.txt
+	new file:   "apple.txt\023y"
+
+23s1087@O-LT-006897 surprise % git commit -m "added amazon.txt" amazon.txt
+[main f480654] added amazon.txt
+ 1 file changed, 13 insertions(+)
+ create mode 100644 amazon.txt
+23s1087@O-LT-006897 surprise % git log --oneline
+f480654 (HEAD -> main) added amazon.txt
+6df428d added micro.txt
+380e0ce added apple.txt
+474bda4 (origin/main, origin/HEAD) Initial commit
+23s1087@O-LT-006897 surprise % git merge surprise                         
+error: Your local changes to the following files would be overwritten by merge:
+  apple.txt?y
+<stdin>:7: trailing whitespace.
+git init 
+<stdin>:17: new blank line at EOF.
++
+warning: 2 lines add whitespace errors.
+Merge with strategy ort failed.
+23s1087@O-LT-006897 surprise % git switch surprise                        
+A	"apple.txt\023y"
+Switched to branch 'surprise'
+23s1087@O-LT-006897 surprise % git log --oneline
+9c64107 (HEAD -> surprise) added unit .txt
+474bda4 (origin/main, origin/HEAD) Initial commit
+23s1087@O-LT-006897 surprise % git switch main                            
+A	"apple.txt\023y"
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+23s1087@O-LT-006897 surprise % git merge surprise 
+error: Your local changes to the following files would be overwritten by merge:
+  apple.txt?y
+<stdin>:7: trailing whitespace.
+git init 
+<stdin>:17: new blank line at EOF.
++
+warning: 2 lines add whitespace errors.
+Merge with strategy ort failed.
+23s1087@O-LT-006897 surprise % ys
+zsh: command not found: ys
+23s1087@O-LT-006897 surprise % git merge surprise
+error: Your local changes to the following files would be overwritten by merge:
+  apple.txt?y
+<stdin>:7: trailing whitespace.
+git init 
+<stdin>:17: new blank line at EOF.
++
+warning: 2 lines add whitespace errors.
+Merge with strategy ort failed.
+23s1087@O-LT-006897 surprise % git switch surprise
+A	"apple.txt\023y"
+Switched to branch 'surprise'
+23s1087@O-LT-006897 surprise % ls
+apple.txt?y	README.md	unit.txt
+23s1087@O-LT-006897 surprise % git switch main    
+A	"apple.txt\023y"
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+23s1087@O-LT-006897 surprise % git checkout -b Surprise
+fatal: a branch named 'Surprise' already exists
+23s1087@O-LT-006897 surprise % git checkout -b Surpris 
+Switched to a new branch 'Surpris'
+23s1087@O-LT-006897 surprise % git log --oneline
+f480654 (HEAD -> Surpris, main) added amazon.txt
+6df428d added micro.txt
+380e0ce added apple.txt
+474bda4 (origin/main, origin/HEAD) Initial commit
+23s1087@O-LT-006897 surprise % touch unnit.txt
+23s1087@O-LT-006897 surprise % nano unnit.txt
+23s1087@O-LT-006897 surprise % git add .
+23s1087@O-LT-006897 surprise % git commit -m "added unnit.txt" unnit.txt
+[Surpris 75a2d9e] added unnit.txt
+ 1 file changed, 3 insertions(+)
+ create mode 100644 unnit.txt
+23s1087@O-LT-006897 surprise % git log --oneline
+75a2d9e (HEAD -> Surpris) added unnit.txt
+f480654 (main) added amazon.txt
+6df428d added micro.txt
+380e0ce added apple.txt
+474bda4 (origin/main, origin/HEAD) Initial commit
+23s1087@O-LT-006897 surprise % git switch main
+A	"apple.txt\023y"
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+23s1087@O-LT-006897 surprise % git branch -d surprise
+error: the branch 'surprise' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D surprise'
+hint: Disable this message with "git config set advice.forceDeleteBranch false"
+23s1087@O-LT-006897 surprise % git branch -D surprise
+Deleted branch surprise (was 9c64107).
+23s1087@O-LT-006897 surprise % git branch
+  Surpris
+* main
+23s1087@O-LT-006897 surprise % git branch -m Surpris surprise
+23s1087@O-LT-006897 surprise % git branch -m main master  
+23s1087@O-LT-006897 surprise % git branch
+* master
+  surprise
+23s1087@O-LT-006897 surprise % git merge surprise
+Updating f480654..75a2d9e
+Fast-forward
+ unnit.txt | 3 +++
+ 1 file changed, 3 insertions(+)
+ create mode 100644 unnit.txt
+23s1087@O-LT-006897 surprise % git switch surprise
+A	"apple.txt\023y"
+Switched to branch 'surprise'
+23s1087@O-LT-006897 surprise % git log -- oneline
+23s1087@O-LT-006897 surprise % git log --oneline 
+75a2d9e (HEAD -> surprise, master) added unnit.txt
+f480654 added amazon.txt
+6df428d added micro.txt
+380e0ce added apple.txt
+474bda4 (origin/main, origin/HEAD) Initial commit
+23s1087@O-LT-006897 surprise % git remote add origin https://github.com/palurisravs1910/kidney.git
+error: remote origin already exists.
+23s1087@O-LT-006897 surprise % git remote remove origin
+23s1087@O-LT-006897 surprise % git remote add origin https://github.com/palurisravs1910/kidney.git
+23s1087@O-LT-006897 surprise % git push origin master
+To https://github.com/palurisravs1910/kidney.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/palurisravs1910/kidney.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+23s1087@O-LT-006897 surprise % git remote remove origin
+23s1087@O-LT-006897 surprise % git remote add origin https://github.com/palurisravs1910/kidney.git
+23s1087@O-LT-006897 surprise % git push origin main    
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/palurisravs1910/kidney.git'
+23s1087@O-LT-006897 surprise % git push origin master
+To https://github.com/palurisravs1910/kidney.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/palurisravs1910/kidney.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+23s1087@O-LT-006897 surprise % git remote -v
+origin	https://github.com/palurisravs1910/kidney.git (fetch)
+origin	https://github.com/palurisravs1910/kidney.git (push)
+23s1087@O-LT-006897 surprise % git push origin master
+To https://github.com/palurisravs1910/kidney.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/palurisravs1910/kidney.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+23s1087@O-LT-006897 surprise % git remote remove origin
+23s1087@O-LT-006897 surprise % git remote add origin master
+23s1087@O-LT-006897 surprise % git remote add origin https://github.com/palurisravs1910/kidney.git
+error: remote origin already exists.
+23s1087@O-LT-006897 surprise % git push origin master
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+23s1087@O-LT-006897 surprise % git fetch origin master                      
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+23s1087@O-LT-006897 surprise % git rebase origin/main
+fatal: invalid upstream 'origin/main'
+23s1087@O-LT-006897 surprise % git rebase origin/master
+fatal: invalid upstream 'origin/master'
+23s1087@O-LT-006897 surprise % git remote add origin https://github.com/palurisravs1910/kidney.git
+error: remote origin already exists.
+23s1087@O-LT-006897 surprise % git push origin master 
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+23s1087@O-LT-006897 surprise %            
+
+
+
+23s1087@O-LT-006897 Desktop % history
+ 1284  git remote add origin https://github.com/palurisravs1910/kidney.git
+ 1285  git push origin main
+ 1286  git push origin master
+ 1287  git remote -v
+ 1288  git push origin master
+ 1289  git remote remove origin
+ 1290  git remote add origin master
+ 1291  git remote add origin https://github.com/palurisravs1910/kidney.git
+ 1292  git push origin master
+ 1293  git fetch origin master
+ 1294  git rebase origin/main
+ 1295  git rebase origin/master
+ 1296  git remote add origin https://github.com/palurisravs1910/kidney.git
+ 1297  git push origin master
+ 1298  cd ..
+ 1299  clear
+23s1087@O-LT-006897 Desktop % 
